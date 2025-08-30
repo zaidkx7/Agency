@@ -1,6 +1,6 @@
 # AgencyScraper
 
-A Python tool that automatically collects information about real estate agencies from the Lefeuvre Immobilier website. It gathers agency names, contact details, services, and operating hours, saving everything to a CSV file. Perfect for anyone who needs to keep track of real estate agency information or analyze market data.
+A Python tool that automatically collects information about real estate agencies from the `Lefeuvre Immobilier` website. It gathers agency names, contact details, services, and operating hours, saving everything to a CSV and JSON files. Perfect for anyone who needs to keep track of real estate agency information or analyze market data.
 
 ## Description
 
@@ -11,13 +11,14 @@ This tool automatically scrapes information about real estate agencies, includin
 - Phone numbers
 - Operating hours
 
-The scraped data is saved in a CSV file for easy access and analysis.
+The scraped data is saved in a CSV and JSON files for easy access and analysis.
 
 ## Features
 
 - Automated scraping of agency information
 - Data extraction from individual agency pages
 - CSV export with structured data
+- JSON structured data 
 - Logging functionality for monitoring the scraping process
 - Error handling and validation
 
@@ -65,7 +66,7 @@ The script will:
 
 ## Output
 
-The script generates a CSV file (`agencies_info.csv`) in the `response` directory with the following columns:
+The script generates a CSV (`agencies_info.csv`) and JSON (`agencies_info.json`) files in the `files` directory with the following columns:
 - ID
 - Agency Link
 - Agency Name
@@ -79,9 +80,10 @@ The script generates a CSV file (`agencies_info.csv`) in the `response` director
 ```
 AgencyScraper/
 ├── main.py
-├── clogger.py
-├── response/
+├── logger.py
+├── files/
 │   └── agencies_info.csv
+|   └── agencies_info.json
 └── README.md
 ```
 
