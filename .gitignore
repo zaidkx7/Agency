@@ -1,4 +1,6 @@
-response/
-__pycache__/
+response
+__pycache__
 *.csv
-.venv/
+.venv
+files
+.env
